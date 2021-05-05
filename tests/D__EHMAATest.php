@@ -34,6 +34,26 @@ class D__EHMAATest extends TestCase
 
         $this->assertEquals(' id="myId"',$objetoD__EHMAA->atributos(['id' => 'myId']));
 
+        $this->assertEquals('<main></main>',$objetoD__EHMAA->etiquetas(['tipo' => 'normal','etiqueta' => 'main']));
+
+        $this->assertEquals('<main>content</main>',$objetoD__EHMAA->etiquetas([
+            'tipo' => 'normal',
+            'etiqueta' => 'main',
+            'contenido' => 'content'
+        ]));
+
+        $this->assertEquals('<img/>',$objetoD__EHMAA->etiquetas(['tipo' => 'auto','etiqueta' => 'img']));   
+        
+        $this->assertEquals('<img class="foto" src="foto.png" alt="foto"/>',$objetoD__EHMAA->etiquetas([
+            'tipo' => 'auto',
+            'etiqueta' => 'img',
+            'attr' => $objetoD__EHMAA->atributos([
+                'class' => 'foto',
+                'src' => 'foto.png',
+                'alt' => 'foto'
+            ])
+        ]));
+
     }
 
 }
