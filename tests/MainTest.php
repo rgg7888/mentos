@@ -23,6 +23,8 @@ class MainTest extends TestCase {
 
         $this->assertEquals('<main id="myId">content</main>',$objetoMain->jMain('myId',['content']));
 
+        $this->assertEquals('<main class="myClass">content</main>',$objetoMain->iMain('myClass',['content']));
+
     }
 
 }
