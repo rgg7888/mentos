@@ -15,6 +15,9 @@
     "minimum-stability": "dev",
     "require": {},
     "autoload": {
-        "classmap": ["src/"]
+        "classmap": ["src/"],
+        "psr-4": {
+            "src\\D__EHMAA\\": "src/D__EHMAA/"
+        }
     }
 }
