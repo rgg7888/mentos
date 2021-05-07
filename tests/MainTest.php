@@ -27,6 +27,9 @@ class MainTest extends TestCase {
             'content' => 'esto,si,sirve'
         ]));
 
+        $this->assertEquals("<body class=\"cuerpo\">contenido</body>",
+        $objetoMain->blockTypeTag('body','cuerpo',"contenido"));
+
         //& content type array
         $this->assertEquals('<main class="myClass" id="myId">content</main>',$objetoMain->kMain('myClass','myId',['content']));
 

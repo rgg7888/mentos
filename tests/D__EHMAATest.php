@@ -42,7 +42,18 @@ class D__EHMAATest extends TestCase
             'contenido' => 'content'
         ]));
 
+        $this->assertEquals('<html lang="es">content</html>',$objetoD__EHMAA->etiquetas([
+            'tipo' => 'normal',
+            'etiqueta' => 'html',
+            'attr' => $objetoD__EHMAA->atributos([
+                'lang' => 'es'
+            ]),
+            'contenido' => 'content'
+        ]));
+
         $this->assertEquals('<img/>',$objetoD__EHMAA->etiquetas(['tipo' => 'auto','etiqueta' => 'img']));   
+
+        $this->assertEquals('<!DOCTYPE html/>',$objetoD__EHMAA->etiquetas(['tipo' => 'auto','etiqueta' => '!DOCTYPE html'])); 
         
         $this->assertEquals('<img class="foto" src="foto.png" alt="foto"/>',$objetoD__EHMAA->etiquetas([
             'tipo' => 'auto',

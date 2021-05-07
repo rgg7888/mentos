@@ -2,9 +2,18 @@
 
 require_once __DIR__ . "/vendor/autoload.php";
 
-echo "<!DOCTYPE html><html><head><title>Piezas4WebSites</title>";
-echo addMaterialize()[0];
-echo "</head><body>";
-echo MBCC();#Materialize Basic Card Container
-echo addMaterialize()[1];
-echo "</body></html>";
+bloque([
+    doc(),
+    html([
+        head([
+            title("Piezas4WebSites"),
+            addMaterialize()[0]
+        ]),
+        body("wrapper",[
+            h1("Custom Elements"),
+            #Materialize Basic Card Container
+            MBCC(),
+            addMaterialize()[1]
+        ])
+    ],"es")
+]);

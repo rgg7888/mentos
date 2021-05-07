@@ -23,6 +23,6 @@
             "App\\Interfaces\\": "src/",
             "App\\Piezas\\": "src/"
         },
-        "files": ["src/piezas.php"]
+        "files": ["src/piezas.php","src/elementos.php"]
     }
 }
