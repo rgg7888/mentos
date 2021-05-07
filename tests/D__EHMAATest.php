@@ -54,6 +54,14 @@ class D__EHMAATest extends TestCase
             ])
         ]));
 
+        $this->assertEquals('<script src="./path/file.js"></script>',$objetoD__EHMAA->etiquetas([
+            'tipo' => 'normal',
+            'etiqueta' => 'script',
+            'attr' => $objetoD__EHMAA->atributos([
+                'src' => './path/file.js'
+            ])
+        ]));
+
     }
 
 }

@@ -21,6 +21,7 @@
             "App\\TAGS\\div\\": "src/",
             "App\\TAGS\\img\\": "src/",
             "App\\Interfaces\\": "src/"
-        }
+        },
+        "files": ["src/piezas.php"]
     }
 }
