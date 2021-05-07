@@ -14,3 +14,8 @@ Recordatorio para mi yo del futuro {
     en escribir la etiqueta con la codificacion utf-8 es ese el valor que tendra que escribir
     de lo contrario escriba el valor del atributo name de la etiqueta meta que quiera crear
 }
+
+
+# para ver los resultados que producen las piezas del archivo index.php 
+#vaya a :
+<a href="https://rgg7888.github.io/mentos-piezas-resultados.github.io/">Results HTML</a>
