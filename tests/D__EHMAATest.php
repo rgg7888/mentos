@@ -30,7 +30,7 @@ class D__EHMAATest extends TestCase
 
         //utilizando el metodo ok() de la clase D__EHMAA desde el objeto $objetoD__EHMAA
         //& this confirm that the ok() method return the string "OK !"
-        $this->assertEquals('OK !',$objetoD__EHMAA->ok());
+        $this->assertEquals('OK',$objetoD__EHMAA->ok());
 
         $this->assertEquals(' id="myId"',$objetoD__EHMAA->atributos(['id' => 'myId']));
 

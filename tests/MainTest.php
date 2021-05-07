@@ -12,7 +12,7 @@ class MainTest extends TestCase {
 
         $this->assertInstanceOf(Main::class, $objetoMain );
 
-        $this->assertEquals('OK !',$objetoMain->ok());
+        $this->assertEquals('OK',$objetoMain->ok());
 
         $this->assertEquals('<link rel="activando_link_por_su_atributo_rel" type="text/css"/>',
         $objetoMain->selfClosing('link','activando_link_por_su_atributo_rel',[

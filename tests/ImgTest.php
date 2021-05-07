@@ -12,7 +12,7 @@ class ImgTest extends TestCase {
 
         $this->assertInstanceOf(Img::class, $objetoImg );
 
-        $this->assertEquals('OK !',$objetoImg->ok());
+        $this->assertEquals('OK',$objetoImg->ok());
 
         $this->assertEquals ('<img class="myImage" src="./path/image.png" alt="description of the image"/>', 
         $objetoImg->aImg('myImage','./path/image.png','description of the image'));

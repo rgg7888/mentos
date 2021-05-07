@@ -12,7 +12,7 @@ class DivTest extends TestCase {
 
         $this->assertInstanceOf(Div::class, $objetoDiv );
 
-        $this->assertEquals('OK !',$objetoDiv->ok());
+        $this->assertEquals('OK',$objetoDiv->ok());
 
         //& content type array
         $this->assertEquals('<div class="myClass" id="myId">content</div>',$objetoDiv->kDiv('myClass','myId',['content']));

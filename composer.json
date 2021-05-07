@@ -20,7 +20,8 @@
             "App\\TAGS\\main\\": "src/",
             "App\\TAGS\\div\\": "src/",
             "App\\TAGS\\img\\": "src/",
-            "App\\Interfaces\\": "src/"
+            "App\\Interfaces\\": "src/",
+            "App\\Piezas\\": "src/"
         },
         "files": ["src/piezas.php"]
     }
