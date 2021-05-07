@@ -11,6 +11,6 @@ Recordatorio para mi yo del futuro {
     que tu quieras , esto es si esta utilizando la clase Main directamente.
 
     para la etiqueta meta , hay dos atributos activadores , charset y name , asi que si esta pensando 
-    en escribir la etiqueta con la codificacion utf-8 es es el valor que tendra que escribir
+    en escribir la etiqueta con la codificacion utf-8 es ese el valor que tendra que escribir
     de lo contrario escriba el valor del atributo name de la etiqueta meta que quiera crear
 }
