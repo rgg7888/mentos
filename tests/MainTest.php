@@ -14,9 +14,17 @@ class MainTest extends TestCase {
 
         $this->assertEquals('OK !',$objetoMain->ok());
 
-        $this->assertEquals('<link class="es_raro_una_clase_en_una_etiqueta_link_esto_es_solo_un_ejemplo" id="puedo_crear_los_atributos_que_quiera"/>',
-        $objetoMain->selfClosing('link','es_raro_una_clase_en_una_etiqueta_link_esto_es_solo_un_ejemplo',[
-            'id' => 'puedo_crear_los_atributos_que_quiera'
+        $this->assertEquals('<link rel="activando_link_por_su_atributo_rel" type="text/css"/>',
+        $objetoMain->selfClosing('link','activando_link_por_su_atributo_rel',[
+            'type' => 'text/css'
+        ]));
+
+        $this->assertEquals('<meta charset="UTF-8"/>',
+        $objetoMain->selfClosing('meta','UTF-8'));
+
+        $this->assertEquals('<meta name="keywords" content="esto,si,sirve"/>',
+        $objetoMain->selfClosing('meta','keywords',[
+            'content' => 'esto,si,sirve'
         ]));
 
         //& content type array
