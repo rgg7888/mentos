@@ -19,3 +19,5 @@ Recordatorio para mi yo del futuro {
 # para ver los resultados que producen las piezas del archivo index.php 
 #vaya a :
 <a href="https://rgg7888.github.io/mentos-piezas-resultados.github.io/">Results HTML</a>
+#O si quiere ver el source code html :
+<a href="https://github.com/rgg7888/mentos-piezas-resultados.github.io">Click Aqui</a>
