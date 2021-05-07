@@ -8,7 +8,7 @@
 
 use PHPUnit\Framework\TestCase; //phpUnit class
 
-use App\D__EHMAA; //my class
+use App\D__EHMAA\D__EHMAA; //my class
 
 # my class //? extends(hereda de) 
 #phpUnit class

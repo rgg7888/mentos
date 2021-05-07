@@ -1,7 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use App\Div;
+use App\TAGS\div\Div;
 
 class DivTest extends TestCase {
 

@@ -1,7 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use App\Main;
+use App\TAGS\main\Main;
 
 class MainTest extends TestCase {
 
