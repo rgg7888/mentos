@@ -160,7 +160,7 @@ Recordatorio para mi yo del futuro {
             ]);
         }
     }
-    </pre>
+   </pre>
   </ul>
   <hr>
   <ul>
