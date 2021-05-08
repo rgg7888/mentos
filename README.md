@@ -65,5 +65,125 @@ Recordatorio para mi yo del futuro {
     <li><a href="https://github.com/rgg7888/mentos/blob/main/tests/Piezas4WebSitesTest.php">fileName : Piezas4WebSites.php , este archivo en su interior funciona con un objeto Div para materializeBasicCardContainer() y un objeto D__EHMAA y otro Main para materialize()</a></li>
     <li><a href="https://github.com/rgg7888/mentos/blob/main/tests/MecanismoTest.php">fileName : Mecanismo.php "esta clase no depende de ninguna de las anteriores"</a></li>
 </ol>
+<hr>
+<h2>helpers : files</h2>
+<ul>
+    <li>elementos.php</li>
+    <pre>
+    if ( !function_exists( 'bloque' ) ) {
+    function bloque (array $bloque) {
+        echo implode("",$bloque);
+        }
+    }
+
+    if ( !function_exists('doc')) {
+        function doc() {
+            $objetoD__EHMAA = App\D__EHMAA\D__EHMAA::instancia();
+            return $objetoD__EHMAA->etiquetas(['tipo' => 'auto','etiqueta' => '!DOCTYPE html']);
+        }
+    }
+
+    if ( !function_exists('html')) {
+        function html($content,string $idioma){
+            $contenido = is_array($content) ? implode("",$content) : $content;
+            $objetoD__EHMAA = App\D__EHMAA\D__EHMAA::instancia();
+            return $objetoD__EHMAA->etiquetas([
+                'tipo' => 'normal',
+                'etiqueta' => 'html',
+                'attr' => $objetoD__EHMAA->atributos([
+                    'lang' => $idioma
+                ]),
+                'contenido' => $contenido
+            ]);
+        }
+    }
+
+    if ( !function_exists( 'head' ) ) {
+        function head ($content) {
+            $contenido = is_array($content) ? implode("",$content) : $content;
+            $objetoDiv = App\TAGS\div\Div::instancia();
+            return str_ireplace("div","head",$objetoDiv->bDiv($contenido));
+        }
+    }
+
+    if ( !function_exists( 'title' ) ) {
+        function title (string $texto) {
+            $objetoDiv = App\TAGS\div\Div::instancia();
+            return str_ireplace("div","title",$objetoDiv->bDiv($texto));
+        }
+    }
+
+    if ( !function_exists('body')) {
+        function body(string $clase, $contenido, array $otrosAtributos = []) {
+            $objetoMain = App\TAGS\main\Main::instancia();
+            return $objetoMain->blockTypeTag('body',$clase,$contenido,$otrosAtributos);
+        }
+    }
+
+    if ( !function_exists( 'h1' ) ) {
+        function h1 (string $content) {
+            $objetoDiv = App\TAGS\div\Div::instancia();
+            return str_ireplace("div","h1",$objetoDiv->bDiv($content));
+        }
+    }
+
+    if (!function_exists('script')) {
+        function script(string $path , array $otherAtrr = []) {
+            $objetoMain = App\TAGS\main\Main::instancia();
+            return $objetoMain->emptyBlockTypeTag('script',$path,$otherAtrr);
+        }
+    }
+
+    if (!function_exists('loadJs')) {
+        function loadJs (array $paths) {
+            $files = [];
+            for($i = 0; $i < count($paths); $i++){
+                array_push($files,file_get_contents($paths[$i]));
+            }
+            $objetoD__EHMAA = App\D__EHMAA\D__EHMAA::instancia();
+            return $objetoD__EHMAA->etiquetas([
+                'tipo' => 'normal',
+                'etiqueta' => 'script',
+                'attr' => $objetoD__EHMAA->atributos([
+                    'type' => 'module'
+                ]),
+                'contenido' => implode("",$files)
+            ]);
+        }
+    }
+
+    if(!function_exists('registro__customElements')) {
+        function registro__customElements() {
+            return loadJs([
+                "./P_EMA_JS/my-elements.js",
+                "./index.js"
+            ]);
+        }
+    }
+    </pre>
+    <li>piezas.php</li>
+    <pre>
+    if ( !function_exists('addMaterialize') ) {
+
+    function addMaterialize () {
+
+        return App\Piezas\Piezas4WebSites::materialize();
+
+    }
+
+    }
+
+    #Materialize Basic Card Container
+    if ( !function_exists('MBCC') ) {
+
+        function MBCC () {
+
+            return App\Piezas\Piezas4WebSites::materializeBasicCardContainer();
+
+        }
+
+    }
+    </pre>
+</ul>
 
 <h2>HAPPY CODING =)</h2>
