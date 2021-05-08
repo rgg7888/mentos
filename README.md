@@ -31,14 +31,38 @@ Recordatorio para mi yo del futuro {
 #O si quiere ver el source code html :
 <a href="https://raw.githubusercontent.com/rgg7888/mentos-piezas-resultados.github.io/main/index.md">Click Aqui</a>
 </pre>
+<h2>Interfaces</h2>
+<ul>
+    <li>divInterface.php a esta interface la implementa la clase Div</li>
+    <h3>Metodos/prototipos</h3>
+    <ol>
+        <li>public function aDiv ();</li>
+        <li>public function bDiv (string $contenido);</li>
+        <li>public function cDiv (string $clase);</li>
+        <li>public function dDiv (string $id);</li>
+        <li>public function eDiv (string $clase, string $contenido);</li>
+        <li>public function fDiv (string $id, string $contenido);</li>
+        <li>public function gDiv (string $clase, string $id, string $contenido);</li>
+        <li>public function hDiv (array $contenido);</li>
+        <li>public function iDiv (string $clase, array $contenido);</li>
+        <li>public function jDiv (string $id, array $contenido);</li>
+        <li>public function kDiv (string $clase, string $id, array $contenido);</li>
+    </ol>
+    <li>imgInterface.php a esta insterface la implementa la clase Img</li>
+    <h3>Metodos/prototipos</h3>
+    <ol>
+        <li>public function aImg (string $clase, string $src, string $alt);</li>
+        <li>public function bImg (string $clase, string $src, string $alt, string $width, string $height);</li>
+    </ol>
+</ul>
 <h2>Orden de Codificacion :</h2>
 <ol>
     <li><a href="https://github.com/rgg7888/mentos/blob/main/tests/D__EHMAATest.php">fileName : D__EHMAA.php</a></li>
     <li><a href="https://github.com/rgg7888/mentos/blob/main/tests/MainTest.php">fileName : Main.php</a></li>
-    <li><a href="https://github.com/rgg7888/mentos/blob/main/tests/DivTest.php">fileName : Div.php</a></li>
-    <li><a href="https://github.com/rgg7888/mentos/blob/main/tests/ImgTest.php">fileName : Img.php</a></li>
+    <li><a href="https://github.com/rgg7888/mentos/blob/main/tests/DivTest.php">fileName : Div.php "Los metodos de esta clase utilizan un objeto Main y la funcion str_replace de php"</a></li>
+    <li><a href="https://github.com/rgg7888/mentos/blob/main/tests/ImgTest.php">fileName : Img.php "los metodos de esta clase utilizan un objeto main para funcionar"</a></li>
     <li><a href="https://github.com/rgg7888/mentos/blob/main/tests/Piezas4WebSitesTest.php">fileName : Piezas4WebSites.php , este archivo en su interior funciona con un objeto Div para materializeBasicCardContainer() y un objeto D__EHMAA y otro Main para materialize()</a></li>
-    <li><a href="https://github.com/rgg7888/mentos/blob/main/tests/MecanismoTest.php">fileName : Mecanismo.php</a></li>
+    <li><a href="https://github.com/rgg7888/mentos/blob/main/tests/MecanismoTest.php">fileName : Mecanismo.php "esta clase no depende de ninguna de las anteriores"</a></li>
 </ol>
 
 <h2>HAPPY CODING =)</h2>
