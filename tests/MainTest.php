@@ -30,6 +30,11 @@ class MainTest extends TestCase {
         $this->assertEquals("<body class=\"cuerpo\">contenido</body>",
         $objetoMain->blockTypeTag('body','cuerpo',"contenido"));
 
+        $this->assertEquals("<script src=\"./path/file.js\" type=\"module\"></script>",
+        $objetoMain->emptyBlockTypeTag('script','./path/file.js',[
+            'type' => 'module'
+        ]));
+
         //& content type array
         $this->assertEquals('<main class="myClass" id="myId">content</main>',$objetoMain->kMain('myClass','myId',['content']));
 

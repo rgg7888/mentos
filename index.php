@@ -13,7 +13,8 @@ bloque([
             h1("Custom Elements"),
             #Materialize Basic Card Container
             MBCC(),
-            addMaterialize()[1]
+            addMaterialize()[1],
+            registro__customElements()
         ])
     ],"es")
 ]);
