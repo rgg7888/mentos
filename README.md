@@ -1,7 +1,7 @@
 # code_name : mentos/ProyectoEMA
 <pre>
 #$origen : D__EHMAA
-#D__EHMAA stands for { Definicion de <u>Etiquetas</u> Html <u>Mediante Arreglos</u> Asociativos }
+#D__EHMAA stands for { Definicion de Etiquetas Html <u>Mediante Arreglos</u> Asociativos }
 </pre>
 <pre>
 utiliza este template para mejorar tu logica
