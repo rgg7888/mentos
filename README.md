@@ -1,4 +1,4 @@
-# code_name : mentos
+# code_name : mentos/ProyectoEMA
 <pre>
 #$origen : D__EHMAA
 #D__EHMAA stands for { Definicion de Etiquetas Html Mediante Arreglos Asociativos }
