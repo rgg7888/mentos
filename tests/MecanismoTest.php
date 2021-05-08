@@ -15,7 +15,7 @@ class MecanismoTest extends TestCase {
         #primer test , comprobamos que se ha guardado la peticion
         $this->assertEquals('div',$mecanismo->getTag());
         /**
-         * ya se a comprobado que efectivamente fuardamos 
+         * ya se a comprobado que efectivamente guardamos 
          * la peticion y podemos obtener la peticion
          * que hemos realizado sin problema.
          * 
@@ -30,7 +30,7 @@ class MecanismoTest extends TestCase {
          * nuestra etiqueta <div></div>
          * 
          * ah! antes de llamar al metodo etiqueta_atributos_contenido()
-         * hay un paso previo lo cual me recuerda que no son tres pasos
+         * hay un paso previo lo cual me recuerda que no son dos pasos
          * sino tres y un paso muy importante antes de construir la etiqueta
          * es definir que tipo de etiqueta queremos construir
          * 
@@ -59,7 +59,7 @@ class MecanismoTest extends TestCase {
          * veamos si las comillas simples hacen la diferencia
          * bueno al parecer al validar si los valores del modelo son null
          * los toma como true y el if permite el paso a el condicional
-         * el cual debe restingir el paso
+         * el cual debe restringir el paso
          * 
          * entonces iremos ceando la etiqueta vacia paso a paso 
          * validando y comprobando lo que vayamos obteniendo 
