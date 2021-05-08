@@ -166,6 +166,16 @@ class MecanismoTest extends TestCase {
          * mecanismos similares descritos en pruebas anteriores pero para un uso mucho mas especifico y restrictivo
          */
 
-    }
+         /**
+          * Muy bien ahora probemos el constructor
+          */
 
+        $NewTag = new Mecanismo('normal','main',['class'=>'test'],'hello world.');
+        $this->assertEquals ("<main class=\"test\">hello world.</main>",$NewTag->etiqueta_atributos_contenido());
+        $NewTag2 = new Mecanismo('auto','link',[
+            'rel'=>'stylesheets',
+            'href' => './path/to/file.css'
+        ]);
+        $this->assertEquals ("<link rel=\"stylesheets\" href=\"./path/to/file.css\"/>",$NewTag2->etiqueta_atributos_contenido());
+    }
 }
