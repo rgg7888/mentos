@@ -115,7 +115,16 @@ class MecanismoTest extends TestCase {
         para que esta prueba no fallara tuve que commentar las pruebas 
         anteriores , como te podras imaginar el codigo ya cambio.
         
-        ahora continuemos con la construccion de <div>contenido</div>*/
+        ahora continuemos con la construccion de <div>contenido</div>
+        
+        TIP RAPIDO : EN PHP EVITE UTILIZAR LOS OPERADORES || Y && EN UNA MISMA CONDICION
+        PARA EVITAR CONFLICTOS, por ejemplo evite hacer esto :
+        
+        if ( condicion || condicion && condicion || condicion ) {}
+        
+        */
+        $mecanismo->setContenido("Contenido");
+        $this->assertEquals('<div>Contenido</div>',$mecanismo->etiqueta_atributos_contenido());
 
     }
 
