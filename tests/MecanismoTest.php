@@ -137,6 +137,14 @@ class MecanismoTest extends TestCase {
         $mecanismo->setAtributos(['class' => 'test','id' => 'myId']);
         $this->assertEquals('<div class="test" id="myId">Content</div>',$mecanismo->etiqueta_atributos_contenido());
 
+        /**
+         * ahora etiqueta base auto
+         */
+        $mecanismo->setType('auto');
+        $mecanismo->setTag("img");
+        $mecanismo->setAtributos([]);
+        $this->assertEquals('<img/>',$mecanismo->etiqueta_atributos_contenido());
+
     }
 
 }
