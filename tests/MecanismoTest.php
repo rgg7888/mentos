@@ -177,5 +177,6 @@ class MecanismoTest extends TestCase {
             'href' => './path/to/file.css'
         ]);
         $this->assertEquals ("<link rel=\"stylesheets\" href=\"./path/to/file.css\"/>",$NewTag2->etiqueta_atributos_contenido());
+        #HAPPY CODING =)
     }
 }
