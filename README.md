@@ -186,7 +186,7 @@ Recordatorio para mi yo del futuro {
         }
 
     }
-    </pre>
+   </pre>
 </ul>
 
 <h2>HAPPY CODING =)</h2>
