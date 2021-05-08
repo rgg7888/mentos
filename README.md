@@ -1,4 +1,8 @@
-# mentos
+# code_name : mentos
+<pre>
+#$origen : D__EHMAA
+#D__EHMAA stands for { Definicion de Etiquetas Html Mediante Arreglos Asociativos }
+</pre>
 
 utiliza este template para mejorar tu logica
 dedusca como desarrollar los metodos y clases propuestos.
