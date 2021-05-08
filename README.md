@@ -31,3 +31,14 @@ Recordatorio para mi yo del futuro {
 #O si quiere ver el source code html :
 <a href="https://raw.githubusercontent.com/rgg7888/mentos-piezas-resultados.github.io/main/index.md">Click Aqui</a>
 </pre>
+<h2>Orden de Codificacion :</h2>
+<ol>
+    <li><a href="https://github.com/rgg7888/mentos/blob/main/tests/D__EHMAATest.php">fileName : D__EHMAA.php</a></li>
+    <li><a href="https://github.com/rgg7888/mentos/blob/main/tests/MainTest.php">fileName : Main.php</a></li>
+    <li><a href="https://github.com/rgg7888/mentos/blob/main/tests/DivTest.php">fileName : Div.php</a></li>
+    <li><a href="https://github.com/rgg7888/mentos/blob/main/tests/ImgTest.php">fileName : Img.php</a></li>
+    <li><a href="https://github.com/rgg7888/mentos/blob/main/tests/Piezas4WebSitesTest.php">fileName : Piezas4WebSites.php , este archivo en su interior funciona con un objeto Div para materializeBasicCardContainer() y un objeto D__EHMAA y otro Main para materialize()</a></li>
+    <li><a href="https://github.com/rgg7888/mentos/blob/main/tests/MecanismoTest.php">fileName : Mecanismo.php</a></li>
+</ol>
+
+<h2>HAPPY CODING =)</h2>
