@@ -69,11 +69,23 @@ class MecanismoTest extends TestCase {
          * el programa toma un camino u otro en base a el 
          * tipo que le establescamos, iniciamos con el default(normal)
          */
-        $this->assertEquals('etiqueta normal',$mecanismo->etiqueta_atributos_contenido());
+        #$this->assertEquals('etiqueta normal',$mecanismo->etiqueta_atributos_contenido());
         #perfecto ahora con selfclosing , asignamos el tipo auto y ejecutamos 
         $mecanismo->setType('auto');
         $this->assertEquals('selfclosing tag',$mecanismo->etiqueta_atributos_contenido());
-        #excelente , todo bien hasta aqui
+        #excelente , todo bien hasta aqui 
+        /**
+         * ahora comprobemos que los atributos al estar vacios se
+         * omita su procesamiento, primero comprobemos que es null o 'null'
+         */
+        $mecanismo->setType('normal');
+        $this->assertEquals('efectivamente es null o \'null\'',$mecanismo->etiqueta_atributos_contenido());
+        #perfecto ahora hagamos lo contrario
+        $mecanismo->setAtributos(['class' => 'test']);
+        $this->assertEquals('es correcto , los atributos tienen valores definidos',$mecanismo->etiqueta_atributos_contenido());
+        #correcto ! , ahora veamos que nos devuelve el mecanismo sobre los atributos
+        $this->assertEquals(' class="test"',$mecanismo->getAtributos());
+        #perfecto hasta este punto no hay falla
 
     }
 
