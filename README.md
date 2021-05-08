@@ -66,7 +66,7 @@ Recordatorio para mi yo del futuro {
     <li><a href="https://github.com/rgg7888/mentos/blob/main/tests/MecanismoTest.php">fileName : Mecanismo.php "esta clase no depende de ninguna de las anteriores"</a></li>
 </ol>
 <hr>
-<h2>helpers : files</h2>
+<h2>helpers : files -> Primeras Funciones implementadas en la fecha : May 8 hora : 17:50 (5:50pm)</h2>
 <ul>
     <li>elementos.php</li>
     <pre>
