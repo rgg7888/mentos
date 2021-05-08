@@ -161,6 +161,9 @@ Recordatorio para mi yo del futuro {
         }
     }
     </pre>
+  </ul>
+  <hr>
+  <ul>
     <li>piezas.php</li>
     <pre>
     if ( !function_exists('addMaterialize') ) {
