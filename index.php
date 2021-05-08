@@ -13,6 +13,7 @@ bloque([
             h1("Custom Elements"),
             #Materialize Basic Card Container
             MBCC(),
+            #"<mi-tag></mi-tag>",
             addMaterialize()[1],
             registro__customElements()
         ])

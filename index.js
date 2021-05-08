@@ -1,1 +1,1 @@
-//registrarEtiqueta("tag-name");
+//registrarEtiqueta("mi-tag");

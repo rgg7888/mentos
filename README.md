@@ -16,6 +16,11 @@ Recordatorio para mi yo del futuro {
 }
 
 
+<h2>Pro Tip para mi yo del futuro</h2>
+#descomente la linea 16 de index.php y la linea #1 del archivo index.js para visualizar el efecto
+#por consola de la etiqueta &lt;mi-tag&gt;&lt;/mi-tag&gt;
+
+
 # para ver los resultados que producen las piezas del archivo index.php 
 #vaya a :
 <a href="https://rgg7888.github.io/mentos-piezas-resultados.github.io/">Results HTML</a>
