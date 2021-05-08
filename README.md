@@ -48,6 +48,7 @@ Recordatorio para mi yo del futuro {
         <li>public function jDiv (string $id, array $contenido);</li>
         <li>public function kDiv (string $clase, string $id, array $contenido);</li>
     </ol>
+    <hr>
     <li>imgInterface.php a esta insterface la implementa la clase Img</li>
     <h3>Metodos/prototipos</h3>
     <ol>
