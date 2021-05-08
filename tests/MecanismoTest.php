@@ -125,6 +125,11 @@ class MecanismoTest extends TestCase {
         */
         $mecanismo->setContenido("Contenido");
         $this->assertEquals('<div>Contenido</div>',$mecanismo->etiqueta_atributos_contenido());
+        $mecanismo->setContenido([
+            "Contenido",
+            " Contenido"
+        ]);
+        $this->assertEquals('<div>Contenido Contenido</div>',$mecanismo->etiqueta_atributos_contenido());
 
     }
 
