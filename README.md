@@ -71,8 +71,8 @@ Recordatorio para mi yo del futuro {
     <li>elementos.php</li>
     <pre>
     if ( !function_exists( 'bloque' ) ) {
-    function bloque (array $bloque) {
-        echo implode("",$bloque);
+        function bloque (array $bloque) {
+            echo implode("",$bloque);
         }
     }
 
@@ -166,15 +166,15 @@ Recordatorio para mi yo del futuro {
   <ul>
     <li>piezas.php</li>
     <pre>
-    if ( !function_exists('addMaterialize') ) {
+     if ( !function_exists('addMaterialize') ) {
 
-    function addMaterialize () {
+        function addMaterialize () {
 
-        return App\Piezas\Piezas4WebSites::materialize();
+            return App\Piezas\Piezas4WebSites::materialize();
 
-    }
+        }
 
-    }
+     }
 
     #Materialize Basic Card Container
     if ( !function_exists('MBCC') ) {
