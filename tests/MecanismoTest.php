@@ -144,6 +144,19 @@ class MecanismoTest extends TestCase {
         $mecanismo->setTag("img");
         $mecanismo->setAtributos([]);
         $this->assertEquals('<img/>',$mecanismo->etiqueta_atributos_contenido());
+        $mecanismo->setAtributos([
+            'src' => "./path/to/image.jpg",
+            'alt' => 'description of the image'
+        ]);
+        $this->assertEquals('<img src="./path/to/image.jpg" alt="description of the image"/>',$mecanismo->etiqueta_atributos_contenido());
+        $mecanismo->setAtributos([
+            'src' => "./path/to/image.jpg",
+            'alt' => 'description of the image',
+            'width' => '400',
+            'height' => '350'
+        ]);
+        $this->assertEquals('<img src="./path/to/image.jpg" alt="description of the image" width="400" height="350"/>',
+        $mecanismo->etiqueta_atributos_contenido());
 
     }
 
