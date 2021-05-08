@@ -3,7 +3,7 @@
 #$origen : D__EHMAA
 #D__EHMAA stands for { Definicion de Etiquetas Html Mediante Arreglos Asociativos }
 </pre>
-
+<pre>
 utiliza este template para mejorar tu logica
 dedusca como desarrollar los metodos y clases propuestos.
 
@@ -29,4 +29,5 @@ Recordatorio para mi yo del futuro {
 #vaya a :
 <a href="https://rgg7888.github.io/mentos-piezas-resultados.github.io/">Results HTML</a>
 #O si quiere ver el source code html :
-<a href="https://github.com/rgg7888/mentos-piezas-resultados.github.io">Click Aqui</a>
+<a href="https://raw.githubusercontent.com/rgg7888/mentos-piezas-resultados.github.io/main/index.md">Click Aqui</a>
+</pre>
