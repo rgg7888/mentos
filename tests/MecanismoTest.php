@@ -157,6 +157,14 @@ class MecanismoTest extends TestCase {
         ]);
         $this->assertEquals('<img src="./path/to/image.jpg" alt="description of the image" width="400" height="350"/>',
         $mecanismo->etiqueta_atributos_contenido());
+        /**
+         * todo 
+         * bien 
+         * con la construccion de etiquetas, cuando usted 
+         * llegue a este punto ya podra crear cualquier helper especifico de cada etiqueta utilizando 
+         * solamenten estos metodos que en este test se muestran, y por su puesto ya tiene idea de unos 
+         * mecanismos similares descritos en pruebas anteriores pero para un uso mucho mas especifico y restrictivo
+         */
 
     }
 
