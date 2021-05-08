@@ -21,7 +21,8 @@
             "App\\TAGS\\div\\": "src/",
             "App\\TAGS\\img\\": "src/",
             "App\\Interfaces\\": "src/",
-            "App\\Piezas\\": "src/"
+            "App\\Piezas\\": "src/",
+            "App\\Union\\Mecanismo\\": "src/"
         },
         "files": ["src/piezas.php","src/elementos.php"]
     }
