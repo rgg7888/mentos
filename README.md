@@ -1,5 +1,5 @@
 # code_name : mentos/ProyectoEMA
-<h1>Para Principiantes y personas que inician con pruebas uitarias en PHP especificamente</h1>
+<h1>Para Principiantes y personas que inician con pruebas unitarias en PHP especificamente</h1>
 <pre>
 #$origen : D__EHMAA
 #D__EHMAA stands for { Definicion de Etiquetas Html <u>Mediante Arreglos</u> Asociativos }
