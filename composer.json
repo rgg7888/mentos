@@ -24,6 +24,6 @@
             "App\\Piezas\\": "src/",
             "App\\Union\\Mecanismo\\": "src/"
         },
-        "files": ["src/piezas.php","src/elementos.php"]
+        "files": ["src/piezas.php","src/elementos.php","src/mecanismosTags.php"]
     }
 }
