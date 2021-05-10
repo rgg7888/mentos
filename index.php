@@ -1,6 +1,7 @@
 <?php
 
 require_once __DIR__ . "/vendor/autoload.php";
+require_once './jsFilesPaths.php';
 
 bloque([
     doc(),
@@ -15,7 +16,7 @@ bloque([
             MBCC(),
             #"<mi-tag></mi-tag>",
             addMaterialize()[1],
-            registro__customElements()
+            registro__customElements($jsFilesPaths)
         ])
     ],"es")
 ]);
