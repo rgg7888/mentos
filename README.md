@@ -1,11 +1,16 @@
 # code_name : mentos/ProyectoEMA
+<h1>Para Principiantes y personas que inician con pruebas unitarias en PHP especificamente</h1>
 <pre>
 #$origen : D__EHMAA
 #D__EHMAA stands for { Definicion de Etiquetas Html <u>Mediante Arreglos</u> Asociativos }
+<div>
+<h2>How to Use this Template :</h2>
+<a href ="https://www.youtube.com/watch?v=tb43kV0G0VU">Tutorial</a>
+</div>
 </pre>
 <pre>
 utiliza este template para mejorar tu logica
-dedusca como desarrollar los metodos y clases propuestos.
+deduzca como desarrollar los metodos y clases propuestos.
 
 TDD -> desarrollo por pruebas.
 
@@ -59,7 +64,7 @@ Recordatorio para mi yo del futuro {
 <h2>Orden de Codificacion :</h2>
 <ol>
     <li><a href="https://github.com/rgg7888/mentos/blob/main/tests/D__EHMAATest.php">fileName : D__EHMAA.php</a></li>
-    <li><a href="https://github.com/rgg7888/mentos/blob/main/tests/MainTest.php">fileName : Main.php</a></li>
+    <li><a href="https://github.com/rgg7888/mentos/blob/main/tests/MainTest.php">fileName : Main.php "Los metodos de esta clase utilizan un objeto D__EHMAA"</a></li>
     <li><a href="https://github.com/rgg7888/mentos/blob/main/tests/DivTest.php">fileName : Div.php "Los metodos de esta clase utilizan un objeto Main y la funcion str_replace de php"</a></li>
     <li><a href="https://github.com/rgg7888/mentos/blob/main/tests/ImgTest.php">fileName : Img.php "los metodos de esta clase utilizan un objeto main para funcionar"</a></li>
     <li><a href="https://github.com/rgg7888/mentos/blob/main/tests/Piezas4WebSitesTest.php">fileName : Piezas4WebSites.php , este archivo en su interior funciona con un objeto Div para materializeBasicCardContainer() y un objeto D__EHMAA y otro Main para materialize()</a></li>
