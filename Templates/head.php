@@ -1,6 +1,6 @@
 <?php
 
-$header = head([
+$head = head([
     title("Templates"),
     addMaterialize()[0],
     style([

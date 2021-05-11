@@ -57,7 +57,7 @@ use App\Union\Mecanismo\Mecanismo;
 
 ############################################
 
-$footer = body("wrapper grey lighten-4",[
+$body = body("wrapper grey lighten-4",[
     $nav->etiqueta_atributos_contenido(),
     addMaterialize()[1]
 ]);

@@ -1,15 +1,15 @@
 <?php
 
 require_once __DIR__ . "/vendor/autoload.php";
-require_once './Templates/header.php';
-#require_once './Templates/footer.php';
-require_once './Templates/footerV2.php';
+require_once './Templates/head.php';
+#require_once './Templates/body.php';
+require_once './Templates/bodyV2.php';
 
 bloque([
     doc(),
     html([
-       $header,
+       $head,
        #$footer
-       $footerV2
+       $bodyV2
     ],"es")
 ]);
