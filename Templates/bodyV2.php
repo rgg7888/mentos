@@ -5,7 +5,9 @@ $bodyV2 = body("wrapper grey lighten-4",[
     form_template_01(
         "Add a Pizza","Your Email:",
         "Pizza Title:",
-        "Ingredients (comma separated):"
+        "Ingredients (comma separated):",
+        "add.php",
+        "post"
     ),
     footer_template_01("center grey-text","Copyright 2021 IG: @ramiroseh"),
     addMaterialize()[1]
