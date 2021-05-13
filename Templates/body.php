@@ -59,5 +59,6 @@ use App\Union\Mecanismo\Mecanismo;
 
 $body = body("wrapper grey lighten-4",[
     $nav->etiqueta_atributos_contenido(),
+    footer_template_01("center grey-text","Copyright 2021 IG: @ramiroseh"),
     addMaterialize()[1]
 ]);
