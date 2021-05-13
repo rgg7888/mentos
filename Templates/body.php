@@ -57,8 +57,32 @@ use App\Union\Mecanismo\Mecanismo;
 
 ############################################
 
+//data base code
+require_once './Templates/conexionDB.php';
+
+//iteracion de los resultado y output
+$Divs = App\TAGS\div\Div::instancia();
+$registros = [];
+foreach($pizzas as $pizza) {
+    array_push($registros,$Divs->eDiv("col s6 md3",
+        $Divs->iDiv("card z-depth-0",[
+            $Divs->iDiv("card-content center",[
+                h6(htmlspecialchars($pizza['title'])),
+                $Divs->bDiv(htmlspecialchars($pizza['ingredients']))
+            ]),
+            $Divs->eDiv("card-action right-align",a("more info",[
+                'class' => 'brand-text',
+                'href' => '#'
+            ]))
+        ])
+    ));
+}
+
 $body = body("wrapper grey lighten-4",[
     $nav->etiqueta_atributos_contenido(),
+    h4("center grey-text","Pizzas!"),
+    $Divs->eDiv("container",
+    $Divs->eDiv("row",implode("",$registros))),
     footer_template_01("center grey-text","Copyright 2021 IG: @ramiroseh"),
     addMaterialize()[1]
 ]);
