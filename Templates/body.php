@@ -60,6 +60,12 @@ use App\Union\Mecanismo\Mecanismo;
 //data base code
 require_once './Templates/conexionDB.php';
 
+$lisTags = '';
+foreach(explode(',',$pizzas[0]['ingredients']) as $ing){
+    $lisTags .= li($ing);
+}
+$lista = ul($lisTags);
+
 //iteracion de los resultado y output
 $Divs = App\TAGS\div\Div::instancia();
 $registros = [];
@@ -68,7 +74,8 @@ foreach($pizzas as $pizza) {
         $Divs->iDiv("card z-depth-0",[
             $Divs->iDiv("card-content center",[
                 h6(htmlspecialchars($pizza['title'])),
-                $Divs->bDiv(htmlspecialchars($pizza['ingredients']))
+                //code here
+                $lista
             ]),
             $Divs->eDiv("card-action right-align",a("more info",[
                 'class' => 'brand-text',
