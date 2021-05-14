@@ -4,7 +4,7 @@ require_once __DIR__ . "/vendor/autoload.php";
 
 $objeto = App\D__EHMAA\D__EHMAA::instancia();
 /**
- * Palabras reservadas +
+ * Palabras reservadas
  * tipo/normal/auto
  * etiqueta
  * attr
@@ -32,9 +32,3 @@ echo $objeto->etiquetas([
  * lang
  * type
  */
-
-#setters and getters
-echo "<pre>".$objeto->_etiquetaFormatoVD()."</pre>";
-$objeto->etiqueta();
-echo "<pre>".$objeto->_etiqueta()."</pre>";
-echo $objeto->_etiqueta();
