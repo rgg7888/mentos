@@ -25,6 +25,6 @@
             "App\\Union\\Mecanismo\\": "src/",
             "App\\Css\\": "src/"
         },
-        "files": ["src/piezas.php","src/elementos.php","src/mecanismosTags.php","src/css.php"]
+        "files": ["src/piezas.php","src/elementos.php","src/mecanismosTags.php","src/css.php","src/funcionesIterativas.php"]
     }
 }

@@ -59,19 +59,7 @@ use App\Union\Mecanismo\Mecanismo;
 ############################################
 
 //data base code
-require_once './Templates/conexionDB.php';
-
-$lisTags = '';
-foreach(explode(',',$pizzas[0]['ingredients']) as $ing){
-    $lisTags .= li($ing);
-}
-$lista = ul($lisTags);
-$mensaje = '';
-if(count($pizzas) >= 3) {
-    $mensaje = "<p>There are 3 or more pizzas.</p>";
-}else{
-    $mensaje = "<p>There are less than 3 pizzas.</p>";
-}
+require_once 'conexionDB.php';
 //iteracion de los resultado y output
 $Divs = App\TAGS\div\Div::instancia();
 $registros = [];
@@ -81,7 +69,9 @@ foreach($pizzas as $pizza) {
             $Divs->iDiv("card-content center",[
                 h6(htmlspecialchars($pizza['title'])),
                 //code here
-                $lista
+                "<ul>",
+                crearLista($pizza['ingredients']),
+                "</ul>"
             ]),
             $Divs->eDiv("card-action right-align",a("more info",[
                 'class' => 'brand-text',
@@ -96,7 +86,7 @@ $body = body("wrapper grey lighten-4",[
     h4("center grey-text","Pizzas!"),
     $Divs->eDiv("container",
     $Divs->eDiv("row",implode("",$registros))),
-    $mensaje,
+    ($pizzas >= 2) ? "more than 2" : "less than 2",
     footer_template_01("center grey-text","Copyright 2021 IG: @ramiroseh"),
     addMaterialize()[1]
 ]);
