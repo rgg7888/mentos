@@ -1,4 +1,5 @@
 <?php
+
 use App\Union\Mecanismo\Mecanismo;
 /**
  * creando etiquetas con la clase Mecanismo
@@ -16,7 +17,7 @@ use App\Union\Mecanismo\Mecanismo;
         $a = new Mecanismo;
         $a->setTag('a');
         $a->setAtributos([
-            'href' => '#',
+            'href' => 'http://localhost:8002/',
             'class' => 'brand-logo brand-text'
         ]);
         $a->setContenido("Pizza Template");
@@ -26,7 +27,7 @@ use App\Union\Mecanismo\Mecanismo;
             $li0->setTag('li');
             #$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
                 $addPizzaButton = new Mecanismo('normal','a',[
-                    'href' => '#',
+                    'href' => 'http://localhost:8001/',
                     'class' => 'btn brand z-depth-0'
                 ],"Add a Pizza");
             #$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
@@ -65,7 +66,12 @@ foreach(explode(',',$pizzas[0]['ingredients']) as $ing){
     $lisTags .= li($ing);
 }
 $lista = ul($lisTags);
-
+$mensaje = '';
+if(count($pizzas) >= 3) {
+    $mensaje = "<p>There are 3 or more pizzas.</p>";
+}else{
+    $mensaje = "<p>There are less than 3 pizzas.</p>";
+}
 //iteracion de los resultado y output
 $Divs = App\TAGS\div\Div::instancia();
 $registros = [];
@@ -90,6 +96,7 @@ $body = body("wrapper grey lighten-4",[
     h4("center grey-text","Pizzas!"),
     $Divs->eDiv("container",
     $Divs->eDiv("row",implode("",$registros))),
+    $mensaje,
     footer_template_01("center grey-text","Copyright 2021 IG: @ramiroseh"),
     addMaterialize()[1]
 ]);

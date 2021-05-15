@@ -9,7 +9,7 @@ use App\Union\Mecanismo\Mecanismo;
 require_once './Templates/recibirDatos.php';
 
 $bodyV2 = body("wrapper grey lighten-4",[
-    header_nav ("Pizza Template", "#", "Add a Pizza", "#"),
+    header_nav ("Pizza Template", "http://localhost:8002/", "Add a Pizza", "http://localhost:8001/"),
     form_template_01(
         "Add a Pizza","Your Email:",
         "Pizza Title:",
