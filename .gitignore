@@ -10,3 +10,5 @@ usingTemplate.php
 index.js
 P_EMA_JS/
 Templates/
+src/html-armor/HtmlArmor.php
+tests/HtmlArmorTest.php

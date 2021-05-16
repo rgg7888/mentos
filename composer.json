@@ -23,7 +23,8 @@
             "App\\Interfaces\\": "src/",
             "App\\Piezas\\": "src/",
             "App\\Union\\Mecanismo\\": "src/",
-            "App\\Css\\": "src/"
+            "App\\Css\\": "src/",
+            "App\\ha\\": "src/html-armor/"
         },
         "files": ["src/piezas.php","src/elementos.php","src/mecanismosTags.php","src/css.php","src/funcionesIterativas.php"]
     }
