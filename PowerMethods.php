@@ -33,8 +33,18 @@ echo $objeto->etiquetas([
  * type
  */
 
-#setters and getters
-echo "<pre>".$objeto->_etiquetaFormatoVD()."</pre>";
-$objeto->etiqueta();
-echo "<pre>".$objeto->_etiqueta()."</pre>";
-echo $objeto->_etiqueta();
+
+$claseMain = App\TAGS\main\Main::instancia();
+/**
+ * Empty tag functions
+ * 
+ *  aMain():sin parametros
+ * 
+ *  emptyBlockTypeTag():string define el tag, 
+ *  string define el valor del atributo, 
+ *  array define los atributos adicionales
+ * 
+ */
+echo $claseMain->blockTypeTag("main","myClass",["content"],[
+    'id' => 'myId'
+]);
