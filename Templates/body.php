@@ -75,7 +75,7 @@ foreach($pizzas as $pizza) {
             ]),
             $Divs->eDiv("card-action right-align",a("more info",[
                 'class' => 'brand-text',
-                'href' => '#'
+                'href' => 'http://localhost:8003?id='.$pizza['id']
             ]))
         ])
     ));
@@ -86,7 +86,11 @@ $body = body("wrapper grey lighten-4",[
     h4("center grey-text","Pizzas!"),
     $Divs->eDiv("container",
     $Divs->eDiv("row",implode("",$registros))),
-    ($pizzas >= 2) ? "more than 2" : "less than 2",
+    ($pizzas >= 2) ? p("Hay mas de 2 Pizzas",[
+        'class' => 'center'
+    ]) : p("Hay menos de 2 Pizzas",[
+        'class' => 'center'
+    ]),
     footer_template_01("center grey-text","Copyright 2021 IG: @ramiroseh"),
     addMaterialize()[1]
 ]);
