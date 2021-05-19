@@ -13,6 +13,8 @@
 
 <a href="https://github.com/rgg7888/ejemplo-alineamiento-cssExt">Html - Armor</a>
 
+<h2>Objetivo del template</h2>
+
 <pre>
 utiliza este template para mejorar tu logica
 deduzca como desarrollar los metodos y clases propuestos.
