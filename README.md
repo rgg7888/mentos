@@ -8,6 +8,11 @@
 <a href ="https://www.youtube.com/watch?v=tb43kV0G0VU">Tutorial</a>
 </div>
 </pre>
+
+<h2>Otros paquetes derivados de este template y su uso</h2>
+
+<a href="https://github.com/rgg7888/ejemplo-alineamiento-cssExt">Html - Armor</a>
+
 <pre>
 utiliza este template para mejorar tu logica
 deduzca como desarrollar los metodos y clases propuestos.
